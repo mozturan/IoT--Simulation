@@ -4,7 +4,6 @@ from paho.mqtt import client as mqtt_client
 from pyspectator.processor import Cpu
 from paho import mqtt
 
-
 broker = 'e9a907584e984fd6a82dc5fa0408e996.s2.eu.hivemq.cloud'
 port = 8883
 topic = "cpu/tempeture"

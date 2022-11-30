@@ -1,34 +1,51 @@
-import time
-from paho.mqtt import client as mqtt_client
-from pyspectator.processor import Cpu
-from paho import mqtt
 
-broker = 'e9a907584e984fd6a82dc5fa0408e996.s2.eu.hivemq.cloud'
-port = 8883
+"""
+* This code creates sensor client for MQTT
+* Sets up an MQTT Broker
+* Publishes the sensor values to MQTT Broker
+* Simulates an MQTT publishing
+
+"""
+#* to read json file
+import json
+#* to create delay (additionally)
+import time
+#* to create a client and connect to broker
+from paho.mqtt import client as mqtt_client
+#* to use tls
+from paho import mqtt
+#* to get cpu heat
+from pyspectator.processor import Cpu
+#* just some make-up
+import sys
+
+#* Gets broker info from json file
+broker_ = json.load(open("mqtt/broker.json"))
+
+#* Gives client we created an id and identify publishing topic
+client_id = "000"
 topic = "cpu/tempeture"
-topic_sub = "api/notification/37/#"
-client_id = ''
-username = 'tinrafiq'
-password = "j8ktX@W7'Qw"
- 
+
 def connect_mqtt():
 
+    #* RC returns either zero or one due to connection status
     def on_connect(client, userdata, flags, rc):
         if rc==0:
             print("Successfully connected to MQTT broker")
         else:
             print("Failed to connect, return code %d", rc)
  
- 
+    #* set as a client (node)
     client = mqtt_client.Client(client_id)
 
     #* enable TLS for secure connection
+    #* some mqtt broker services use this
     client.tls_set(tls_version=mqtt.client.ssl.PROTOCOL_TLS)
 
-
-    client.username_pw_set(username, password)
+    #* Broker login infos
+    client.username_pw_set(broker_["username"], broker_["password"])
     client.on_connect = on_connect
-    client.connect(broker, port)
+    client.connect(broker_["broker"], broker_["port"])
     return client
 
 #* GETS CPU TEMP AS STATUS
@@ -36,7 +53,7 @@ def publish(client):
      msg_count = 0
      while True:
         cpu = Cpu(monitoring_latency=1) #changed here
-        time.sleep(1)
+        # time.sleep(1)
         msg = f"{cpu.temperature}"
         result = client.publish(topic, msg)
         #* result: [0, 1]
@@ -53,6 +70,13 @@ def run():
     publish(client)
 
 if __name__ == '__main__':
-    run()
+    try:
+        run()
+
+    except KeyboardInterrupt:
+        print("\nPrograms was stopped")  
+        sys.exit()
+
+
 
 

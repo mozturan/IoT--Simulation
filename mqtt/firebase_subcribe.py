@@ -53,16 +53,14 @@ def subscribe(client: mqtt_client):
         temp = 0
 
         if msg.topic == "cpu/tempeture":
-            temp = str(msg.payload, 'UTF-8')
-            temp = temp.strip()
+            temp = msg.payload.decode()          
             print(temp)
             global val
             val = temp
 
         if val != '':    
             print(val)
-            data = val
-            firebase.post('/cpu/tempeture', val)
+            firebase.post('/cpu/temperature', val)
             val = ''
 
     #* subscribe to a certain topic and print it

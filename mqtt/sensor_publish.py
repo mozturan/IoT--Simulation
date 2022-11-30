@@ -20,7 +20,7 @@ from pyspectator.processor import Cpu
 import sys
 
 #* Gets broker info from json file
-broker_ = json.load(open("mqtt/broker.json"))
+broker_ = json.load(open("broker.json"))
 
 #* Gives client we created an id and identify publishing topic
 client_id = "000"

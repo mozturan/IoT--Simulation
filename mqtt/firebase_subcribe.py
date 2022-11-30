@@ -13,6 +13,10 @@ from pyspectator.processor import Cpu
 #* just some make-up
 import sys
 
+from firebase import firebase
+
+firebase = firebase.FirebaseApplication('https://iot-mqtt-now-default-rtdb.europe-west1.firebasedatabase.app', None)
+
 #* Gets broker info from json file
 broker_ = json.load(open("mqtt/broker.json"))
 
@@ -45,7 +49,21 @@ def connect_mqtt():
 def subscribe(client: mqtt_client):
 
     def on_message(client, userdata, msg):
-        print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
+        # print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
+        temp = 0
+
+        if msg.topic == "cpu/tempeture":
+            temp = str(msg.payload, 'UTF-8')
+            temp = temp.strip()
+            print(temp)
+            global val
+            val = temp
+
+        if val != '':    
+            print(val)
+            data = val
+            firebase.post('/cpu/tempeture', val)
+            val = ''
 
     #* subscribe to a certain topic and print it
     client.subscribe(topic)

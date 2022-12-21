@@ -1,3 +1,4 @@
+import time
 import streamlit as st
     #* to read json file
     #* to create delay (additionally)
@@ -9,6 +10,8 @@ from paho import mqtt
     #* just some make-up
 from firebase import firebase
 import sys
+import matplotlib.pyplot as plt
+import numpy as np
 
 broker = 'e9a907584e984fd6a82dc5fa0408e996.s2.eu.hivemq.cloud'
 port = 8883
@@ -19,14 +22,20 @@ username = 'tinrafiq'
 password = "j8ktX@W7'Qw"
 firebase = firebase.FirebaseApplication('https://iot-mqtt-now-default-rtdb.europe-west1.firebasedatabase.app', None)
 
+global db
+db= [0 , 0]
+
+global mess
+mess = [0, 0]
+
 def connect_mqtt():
 
         #* RC returns either zero or one due to connection status
         def on_connect(client, userdata, flags, rc):
             if rc==0:
-                st.header("**CONNECTED TO THE MQTT BROKER**")
+                st.sidebar.header("**CONNECTED TO THE MQTT BROKER**")
             else:
-                st.header("**CONNECTION FAILED**")
+                st.sidebar.header("**CONNECTION FAILED**")
 
         #* set as a client (node)
         client = mqtt_client.Client(client_id)
@@ -47,16 +56,15 @@ def subscribe(client: mqtt_client):
             # print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
 
             if msg.topic == "cpu/tempeture":
-                temp = msg.payload.decode()      
+                temp = msg.payload.decode() 
+                db.append(temp)
+                mess.append(msg)
                 
-                # data = pandas.DataFrame(temp_values)
-                # st.area_chart(data, height= 500)
                 global val
                 val = str(temp)
 
             if val != '':
  
-                st.metric(label="Temperature", value=val+" °C")
                 firebase.post('/cpu/temperature', temp)
                 val = ''
 
@@ -65,20 +73,31 @@ def subscribe(client: mqtt_client):
         client.on_message = on_message
 
 def main():
-
     title = st.sidebar.title("**Welcome, You can connect to my MQTT Simulation with this Web App**")
     context = st.sidebar.subheader("**With MQTT I'am publishing my CPU Temperature to a MQTT Broker. This Web App is a client subscribing to the topic which is published by my computer client.**")
     text = st.sidebar.subheader("**To connect to MQTT broker by default settings click on 'Connect' button**")
 
     button_connect = st.sidebar.button('Connect and Subscribe')
-
+    area_1 = st.empty()
+    area_2 = st.empty()
+    # image = Image.open("MQTT/spinner2.gif")
     if button_connect:
         st.subheader("We also send data to Firebase Realtime DB")
+        area_1.markdown("![Alt Text](https://wp-technique.com/loading/loading.gif)")
         client = connect_mqtt()
         subscribe(client)
-        client.loop_forever()
-                
+        # client.loop_forever()
+        mylabels = ["Temperature", " " ]
+        mycolors = ["orange", "grey"]
+        wp = { 'linewidth' : 3, 'edgecolor' : "green" }
 
+        while True:
+            client.loop()
+            area_1.metric(label="Temperature", value=str(db[-1])+" °C")
+            fig, ax = plt.subplots()
+            ax = plt.pie(np.array([int(db[-1]), 75-int(db[-1])]),labels=mylabels, colors=mycolors, wedgeprops=wp, shadow=True)
+            area_2.pyplot(fig)
+            
 if __name__ == '__main__':
     try:
         main()

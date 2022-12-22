@@ -90,7 +90,7 @@ def main():
 
         while True:
             client.loop()
-            area_1.metric(label="Value", value=str((db[-1]))+" °C")
+            area_1.metric(label="Value", value=str((db[-1])))
             
 if __name__ == '__main__':
     try:

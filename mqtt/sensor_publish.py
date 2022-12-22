@@ -20,7 +20,7 @@ from pyspectator.processor import Cpu
 import sys
 
 #* Gets broker info from json file
-broker_ = json.load(open("broker.json"))
+broker_ = json.load(open("./mqtt/broker.json"))
 
 #* Gives client we created an id and identify publishing topic
 client_id = "000"
@@ -52,9 +52,12 @@ def connect_mqtt():
 def publish(client):
      msg_count = 0
      while True:
-        cpu = Cpu(monitoring_latency=1) #changed here
-        # time.sleep(1)
-        msg = f"{cpu.temperature}"
+        time.sleep(1)
+        with open("C:\\Users\\tinrafiq\\Documents\\zb\\results\\S11", "r") as file:
+            last_line = file.readlines()[-1]
+            message = last_line.split()
+            topic = message[1]
+        msg = message[2]
         result = client.publish(topic, msg)
         #* result: [0, 1]
         status = result[0]

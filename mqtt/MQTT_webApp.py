@@ -10,8 +10,6 @@ from paho import mqtt
     #* just some make-up
 from firebase import firebase
 import sys
-import matplotlib.pyplot as plt
-import numpy as np
 
 broker = 'e9a907584e984fd6a82dc5fa0408e996.s2.eu.hivemq.cloud'
 port = 8883

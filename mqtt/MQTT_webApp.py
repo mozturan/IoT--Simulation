@@ -15,7 +15,7 @@ import numpy as np
 
 broker = 'e9a907584e984fd6a82dc5fa0408e996.s2.eu.hivemq.cloud'
 port = 8883
-topic = "cpu/tempeture"
+topic = "xbee"
 topic_sub = "api/notification/37/#"
 client_id = ''
 username = 'tinrafiq'
@@ -55,7 +55,7 @@ def subscribe(client: mqtt_client):
         def on_message(client, userdata, msg):
             # print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
 
-            if msg.topic == "cpu/tempeture":
+            if msg.topic == "xbee":
                 temp = msg.payload.decode() 
                 db.append(temp)
                 mess.append(msg)
@@ -65,7 +65,7 @@ def subscribe(client: mqtt_client):
 
             if val != '':
  
-                firebase.post('/cpu/temperature', temp)
+                firebase.post('/xbee', temp)
                 val = ''
 
         #* subscribe to a certain topic and print it
@@ -87,16 +87,10 @@ def main():
         client = connect_mqtt()
         subscribe(client)
         # client.loop_forever()
-        mylabels = ["Temperature", " " ]
-        mycolors = ["orange", "grey"]
-        wp = { 'linewidth' : 3, 'edgecolor' : "green" }
 
         while True:
             client.loop()
-            area_1.metric(label="Temperature", value=str(db[-1])+" °C")
-            fig, ax = plt.subplots()
-            ax = plt.pie(np.array([int(db[-1]), 75-int(db[-1])]),labels=mylabels, colors=mycolors, wedgeprops=wp, shadow=True)
-            area_2.pyplot(fig)
+            area_1.metric(label="Value", value=str((db[-1]))+" °C")
             
 if __name__ == '__main__':
     try:

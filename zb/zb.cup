@@ -1,0 +1,19 @@
+CupCarbon v. IoT 5.0
+----------------
+name:zb
+zoom:1
+centerposition_la:53.477805077286334
+centerposition_lo:-2.244933843612671
+map:1
+display_details:true
+draw_radio_links:true
+draw_sensor_arrows:true
+radio_links_color:2
+draw_marker_arrows:true
+display_rl_distance:true
+propagation:false
+display_marker_distance:true
+display_radio_messages:true
+draw_script_file_name:true
+display_print_messages:true
+display_all_routes:false

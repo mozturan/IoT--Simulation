@@ -1,0 +1,2507 @@
+===========================
+Initialization
+======================================================
+START SIMULATION
+======================================================
+
+----------------------------------------------------------------------------
+Time : 0.0
+Min (milliseconds) : 0.0
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#0.0
+S1 Read DATA: S#12#0.0
+S1 DATA Creation:xbee#0.0
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#0.0" in its buffer.
+S11 Starts the loop section.
+S11 is waiting for data ...
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 6.4E-20
+Min (milliseconds) : 6.4E-20
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#0.0".
+S1 has finished sending the message : "xbee#0.0" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#0.0" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 0.010762666666666667
+Min (milliseconds) : 0.010762666666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#0.0" and puts it in x
+S2 Read DATA: xbee#0.0
+S2 DATA Creation:xbee#0.0
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#0.0" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 0.010762666666666667
+Min (milliseconds) : 6.4E-20
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#0.0".
+S2 has finished sending the message : "xbee#0.0" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#0.0" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 0.021525333333333334
+Min (milliseconds) : 0.010762666666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#0.0" and puts it in v
+S11 Read DATA: xbee#0.0
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 0.9999999999999999
+Min (milliseconds) : 0.9784746666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#0.0
+S1 Read DATA: S#12#0.0
+S1 DATA Creation:xbee#0.0
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#0.0" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 0.9999999999999999
+Min (milliseconds) : 6.4E-20
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#0.0".
+S1 has finished sending the message : "xbee#0.0" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#0.0" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 1.0107626666666665
+Min (milliseconds) : 0.010762666666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#0.0" and puts it in x
+S2 Read DATA: xbee#0.0
+S2 DATA Creation:xbee#0.0
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#0.0" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 1.0107626666666665
+Min (milliseconds) : 6.4E-20
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#0.0".
+S2 has finished sending the message : "xbee#0.0" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#0.0" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 1.0215253333333332
+Min (milliseconds) : 0.010762666666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#0.0" and puts it in v
+S11 Read DATA: xbee#0.0
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 1.9999999999999998
+Min (milliseconds) : 0.9784746666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#17.358415120451014
+S1 Read DATA: S#12#17.358415120451014
+S1 DATA Creation:xbee#17.358415120451014
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#17.358415120451014" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 1.9999999999999998
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#17.358415120451014".
+S1 has finished sending the message : "xbee#17.358415120451014" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#17.358415120451014" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 2.0271026666666665
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#17.358415120451014" and puts it in x
+S2 Read DATA: xbee#17.358415120451014
+S2 DATA Creation:xbee#17.358415120451014
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#17.358415120451014" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 2.0271026666666665
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#17.358415120451014".
+S2 has finished sending the message : "xbee#17.358415120451014" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#17.358415120451014" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 2.054205333333333
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#17.358415120451014" and puts it in v
+S11 Read DATA: xbee#17.358415120451014
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 2.9999999999999996
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#19.859622885493845
+S1 Read DATA: S#12#19.859622885493845
+S1 DATA Creation:xbee#19.859622885493845
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#19.859622885493845" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 2.9999999999999996
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#19.859622885493845".
+S1 has finished sending the message : "xbee#19.859622885493845" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#19.859622885493845" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 3.027102666666666
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#19.859622885493845" and puts it in x
+S2 Read DATA: xbee#19.859622885493845
+S2 DATA Creation:xbee#19.859622885493845
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#19.859622885493845" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 3.027102666666666
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#19.859622885493845".
+S2 has finished sending the message : "xbee#19.859622885493845" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#19.859622885493845" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 3.0542053333333326
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#19.859622885493845" and puts it in v
+S11 Read DATA: xbee#19.859622885493845
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 3.999999999999999
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#23.60532332823899
+S1 Read DATA: S#12#23.60532332823899
+S1 DATA Creation:xbee#23.60532332823899
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#23.60532332823899" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 3.999999999999999
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#23.60532332823899".
+S1 has finished sending the message : "xbee#23.60532332823899" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#23.60532332823899" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 4.026013333333332
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#23.60532332823899" and puts it in x
+S2 Read DATA: xbee#23.60532332823899
+S2 DATA Creation:xbee#23.60532332823899
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#23.60532332823899" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 4.026013333333332
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#23.60532332823899".
+S2 has finished sending the message : "xbee#23.60532332823899" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#23.60532332823899" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 4.0520266666666656
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#23.60532332823899" and puts it in v
+S11 Read DATA: xbee#23.60532332823899
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 4.999999999999999
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#34.63418380648207
+S1 Read DATA: S#12#34.63418380648207
+S1 DATA Creation:xbee#34.63418380648207
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#34.63418380648207" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 4.999999999999999
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#34.63418380648207".
+S1 has finished sending the message : "xbee#34.63418380648207" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#34.63418380648207" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 5.026013333333332
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#34.63418380648207" and puts it in x
+S2 Read DATA: xbee#34.63418380648207
+S2 DATA Creation:xbee#34.63418380648207
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#34.63418380648207" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 5.026013333333332
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#34.63418380648207".
+S2 has finished sending the message : "xbee#34.63418380648207" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#34.63418380648207" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 5.0520266666666656
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#34.63418380648207" and puts it in v
+S11 Read DATA: xbee#34.63418380648207
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 5.999999999999999
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#26.5532730089881
+S1 Read DATA: S#12#26.5532730089881
+S1 DATA Creation:xbee#26.5532730089881
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#26.5532730089881" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 5.999999999999999
+Min (milliseconds) : 1.68E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#26.5532730089881".
+S1 has finished sending the message : "xbee#26.5532730089881" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#26.5532730089881" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 6.0249239999999995
+Min (milliseconds) : 0.024924
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#26.5532730089881" and puts it in x
+S2 Read DATA: xbee#26.5532730089881
+S2 DATA Creation:xbee#26.5532730089881
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#26.5532730089881" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 6.0249239999999995
+Min (milliseconds) : 1.68E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#26.5532730089881".
+S2 has finished sending the message : "xbee#26.5532730089881" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#26.5532730089881" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 6.049848
+Min (milliseconds) : 0.024924
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#26.5532730089881" and puts it in v
+S11 Read DATA: xbee#26.5532730089881
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 7.0
+Min (milliseconds) : 0.9501520000000001
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#21.315858000074943
+S1 Read DATA: S#12#21.315858000074943
+S1 DATA Creation:xbee#21.315858000074943
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#21.315858000074943" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 7.0
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#21.315858000074943".
+S1 has finished sending the message : "xbee#21.315858000074943" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#21.315858000074943" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 7.027102666666667
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#21.315858000074943" and puts it in x
+S2 Read DATA: xbee#21.315858000074943
+S2 DATA Creation:xbee#21.315858000074943
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#21.315858000074943" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 7.027102666666667
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#21.315858000074943".
+S2 has finished sending the message : "xbee#21.315858000074943" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#21.315858000074943" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 7.054205333333334
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#21.315858000074943" and puts it in v
+S11 Read DATA: xbee#21.315858000074943
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 8.0
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#22.718974426294494
+S1 Read DATA: S#12#22.718974426294494
+S1 DATA Creation:xbee#22.718974426294494
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#22.718974426294494" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 8.0
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#22.718974426294494".
+S1 has finished sending the message : "xbee#22.718974426294494" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#22.718974426294494" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 8.027102666666666
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#22.718974426294494" and puts it in x
+S2 Read DATA: xbee#22.718974426294494
+S2 DATA Creation:xbee#22.718974426294494
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#22.718974426294494" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 8.027102666666666
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#22.718974426294494".
+S2 has finished sending the message : "xbee#22.718974426294494" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#22.718974426294494" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 8.054205333333332
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#22.718974426294494" and puts it in v
+S11 Read DATA: xbee#22.718974426294494
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 8.999999999999998
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#21.799875995689654
+S1 Read DATA: S#12#21.799875995689654
+S1 DATA Creation:xbee#21.799875995689654
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#21.799875995689654" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 8.999999999999998
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#21.799875995689654".
+S1 has finished sending the message : "xbee#21.799875995689654" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#21.799875995689654" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 9.027102666666664
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#21.799875995689654" and puts it in x
+S2 Read DATA: xbee#21.799875995689654
+S2 DATA Creation:xbee#21.799875995689654
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#21.799875995689654" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 9.027102666666664
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#21.799875995689654".
+S2 has finished sending the message : "xbee#21.799875995689654" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#21.799875995689654" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 9.05420533333333
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#21.799875995689654" and puts it in v
+S11 Read DATA: xbee#21.799875995689654
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 9.999999999999996
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#15.599252313221953
+S1 Read DATA: S#12#15.599252313221953
+S1 DATA Creation:xbee#15.599252313221953
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#15.599252313221953" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 9.999999999999996
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#15.599252313221953".
+S1 has finished sending the message : "xbee#15.599252313221953" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#15.599252313221953" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 10.027102666666663
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#15.599252313221953" and puts it in x
+S2 Read DATA: xbee#15.599252313221953
+S2 DATA Creation:xbee#15.599252313221953
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#15.599252313221953" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 10.027102666666663
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#15.599252313221953".
+S2 has finished sending the message : "xbee#15.599252313221953" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#15.599252313221953" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 10.054205333333329
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#15.599252313221953" and puts it in v
+S11 Read DATA: xbee#15.599252313221953
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 10.999999999999995
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#22.46426646282875
+S1 Read DATA: S#12#22.46426646282875
+S1 DATA Creation:xbee#22.46426646282875
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#22.46426646282875" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 10.999999999999995
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#22.46426646282875".
+S1 has finished sending the message : "xbee#22.46426646282875" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#22.46426646282875" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 11.026013333333328
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#22.46426646282875" and puts it in x
+S2 Read DATA: xbee#22.46426646282875
+S2 DATA Creation:xbee#22.46426646282875
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#22.46426646282875" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 11.026013333333328
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#22.46426646282875".
+S2 has finished sending the message : "xbee#22.46426646282875" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#22.46426646282875" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 11.052026666666661
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#22.46426646282875" and puts it in v
+S11 Read DATA: xbee#22.46426646282875
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 11.999999999999995
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#21.35488153202242
+S1 Read DATA: S#12#21.35488153202242
+S1 DATA Creation:xbee#21.35488153202242
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#21.35488153202242" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 11.999999999999995
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#21.35488153202242".
+S1 has finished sending the message : "xbee#21.35488153202242" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#21.35488153202242" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 12.026013333333328
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#21.35488153202242" and puts it in x
+S2 Read DATA: xbee#21.35488153202242
+S2 DATA Creation:xbee#21.35488153202242
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#21.35488153202242" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 12.026013333333328
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#21.35488153202242".
+S2 has finished sending the message : "xbee#21.35488153202242" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#21.35488153202242" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 12.052026666666661
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#21.35488153202242" and puts it in v
+S11 Read DATA: xbee#21.35488153202242
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 12.999999999999995
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#20.32203421425012
+S1 Read DATA: S#12#20.32203421425012
+S1 DATA Creation:xbee#20.32203421425012
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#20.32203421425012" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 12.999999999999995
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#20.32203421425012".
+S1 has finished sending the message : "xbee#20.32203421425012" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#20.32203421425012" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 13.026013333333328
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#20.32203421425012" and puts it in x
+S2 Read DATA: xbee#20.32203421425012
+S2 DATA Creation:xbee#20.32203421425012
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#20.32203421425012" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 13.026013333333328
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#20.32203421425012".
+S2 has finished sending the message : "xbee#20.32203421425012" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#20.32203421425012" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 13.052026666666661
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#20.32203421425012" and puts it in v
+S11 Read DATA: xbee#20.32203421425012
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 13.999999999999995
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#27.150125055310607
+S1 Read DATA: S#12#27.150125055310607
+S1 DATA Creation:xbee#27.150125055310607
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#27.150125055310607" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 13.999999999999995
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#27.150125055310607".
+S1 has finished sending the message : "xbee#27.150125055310607" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#27.150125055310607" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 14.02710266666666
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#27.150125055310607" and puts it in x
+S2 Read DATA: xbee#27.150125055310607
+S2 DATA Creation:xbee#27.150125055310607
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#27.150125055310607" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 14.02710266666666
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#27.150125055310607".
+S2 has finished sending the message : "xbee#27.150125055310607" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#27.150125055310607" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 14.054205333333327
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#27.150125055310607" and puts it in v
+S11 Read DATA: xbee#27.150125055310607
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 14.999999999999993
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#18.89148959825258
+S1 Read DATA: S#12#18.89148959825258
+S1 DATA Creation:xbee#18.89148959825258
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#18.89148959825258" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 14.999999999999993
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#18.89148959825258".
+S1 has finished sending the message : "xbee#18.89148959825258" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#18.89148959825258" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 15.026013333333326
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#18.89148959825258" and puts it in x
+S2 Read DATA: xbee#18.89148959825258
+S2 DATA Creation:xbee#18.89148959825258
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#18.89148959825258" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 15.026013333333326
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#18.89148959825258".
+S2 has finished sending the message : "xbee#18.89148959825258" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#18.89148959825258" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 15.05202666666666
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#18.89148959825258" and puts it in v
+S11 Read DATA: xbee#18.89148959825258
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 15.999999999999993
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#28.111261315696744
+S1 Read DATA: S#12#28.111261315696744
+S1 DATA Creation:xbee#28.111261315696744
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#28.111261315696744" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 15.999999999999993
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#28.111261315696744".
+S1 has finished sending the message : "xbee#28.111261315696744" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#28.111261315696744" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 16.02710266666666
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#28.111261315696744" and puts it in x
+S2 Read DATA: xbee#28.111261315696744
+S2 DATA Creation:xbee#28.111261315696744
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#28.111261315696744" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 16.02710266666666
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#28.111261315696744".
+S2 has finished sending the message : "xbee#28.111261315696744" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#28.111261315696744" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 16.05420533333333
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#28.111261315696744" and puts it in v
+S11 Read DATA: xbee#28.111261315696744
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 16.999999999999996
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#25.48674174143081
+S1 Read DATA: S#12#25.48674174143081
+S1 DATA Creation:xbee#25.48674174143081
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#25.48674174143081" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 16.999999999999996
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#25.48674174143081".
+S1 has finished sending the message : "xbee#25.48674174143081" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#25.48674174143081" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 17.02601333333333
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#25.48674174143081" and puts it in x
+S2 Read DATA: xbee#25.48674174143081
+S2 DATA Creation:xbee#25.48674174143081
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#25.48674174143081" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 17.02601333333333
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#25.48674174143081".
+S2 has finished sending the message : "xbee#25.48674174143081" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#25.48674174143081" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 17.052026666666666
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#25.48674174143081" and puts it in v
+S11 Read DATA: xbee#25.48674174143081
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 18.0
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#20.01145399807978
+S1 Read DATA: S#12#20.01145399807978
+S1 DATA Creation:xbee#20.01145399807978
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#20.01145399807978" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 18.0
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#20.01145399807978".
+S1 has finished sending the message : "xbee#20.01145399807978" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#20.01145399807978" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 18.026013333333335
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#20.01145399807978" and puts it in x
+S2 Read DATA: xbee#20.01145399807978
+S2 DATA Creation:xbee#20.01145399807978
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#20.01145399807978" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 18.026013333333335
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#20.01145399807978".
+S2 has finished sending the message : "xbee#20.01145399807978" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#20.01145399807978" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 18.05202666666667
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#20.01145399807978" and puts it in v
+S11 Read DATA: xbee#20.01145399807978
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 19.000000000000004
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#14.571851266250356
+S1 Read DATA: S#12#14.571851266250356
+S1 DATA Creation:xbee#14.571851266250356
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#14.571851266250356" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 19.000000000000004
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#14.571851266250356".
+S1 has finished sending the message : "xbee#14.571851266250356" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#14.571851266250356" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 19.02710266666667
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#14.571851266250356" and puts it in x
+S2 Read DATA: xbee#14.571851266250356
+S2 DATA Creation:xbee#14.571851266250356
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#14.571851266250356" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 19.02710266666667
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#14.571851266250356".
+S2 has finished sending the message : "xbee#14.571851266250356" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#14.571851266250356" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 19.05420533333334
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#14.571851266250356" and puts it in v
+S11 Read DATA: xbee#14.571851266250356
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 20.000000000000007
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#23.74690239449035
+S1 Read DATA: S#12#23.74690239449035
+S1 DATA Creation:xbee#23.74690239449035
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#23.74690239449035" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 20.000000000000007
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#23.74690239449035".
+S1 has finished sending the message : "xbee#23.74690239449035" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#23.74690239449035" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 20.026013333333342
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#23.74690239449035" and puts it in x
+S2 Read DATA: xbee#23.74690239449035
+S2 DATA Creation:xbee#23.74690239449035
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#23.74690239449035" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 20.026013333333342
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#23.74690239449035".
+S2 has finished sending the message : "xbee#23.74690239449035" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#23.74690239449035" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 20.052026666666677
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#23.74690239449035" and puts it in v
+S11 Read DATA: xbee#23.74690239449035
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 21.00000000000001
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#29.353685389207676
+S1 Read DATA: S#12#29.353685389207676
+S1 DATA Creation:xbee#29.353685389207676
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#29.353685389207676" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 21.00000000000001
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#29.353685389207676".
+S1 has finished sending the message : "xbee#29.353685389207676" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#29.353685389207676" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 21.02710266666668
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#29.353685389207676" and puts it in x
+S2 Read DATA: xbee#29.353685389207676
+S2 DATA Creation:xbee#29.353685389207676
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#29.353685389207676" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 21.02710266666668
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#29.353685389207676".
+S2 has finished sending the message : "xbee#29.353685389207676" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#29.353685389207676" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 21.054205333333346
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#29.353685389207676" and puts it in v
+S11 Read DATA: xbee#29.353685389207676
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 22.000000000000014
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#19.267110550293502
+S1 Read DATA: S#12#19.267110550293502
+S1 DATA Creation:xbee#19.267110550293502
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#19.267110550293502" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 22.000000000000014
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#19.267110550293502".
+S1 has finished sending the message : "xbee#19.267110550293502" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#19.267110550293502" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 22.027102666666682
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#19.267110550293502" and puts it in x
+S2 Read DATA: xbee#19.267110550293502
+S2 DATA Creation:xbee#19.267110550293502
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#19.267110550293502" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 22.027102666666682
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#19.267110550293502".
+S2 has finished sending the message : "xbee#19.267110550293502" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#19.267110550293502" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 22.05420533333335
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#19.267110550293502" and puts it in v
+S11 Read DATA: xbee#19.267110550293502
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 23.000000000000018
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#16.097152896145424
+S1 Read DATA: S#12#16.097152896145424
+S1 DATA Creation:xbee#16.097152896145424
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#16.097152896145424" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 23.000000000000018
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#16.097152896145424".
+S1 has finished sending the message : "xbee#16.097152896145424" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#16.097152896145424" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 23.027102666666686
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#16.097152896145424" and puts it in x
+S2 Read DATA: xbee#16.097152896145424
+S2 DATA Creation:xbee#16.097152896145424
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#16.097152896145424" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 23.027102666666686
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#16.097152896145424".
+S2 has finished sending the message : "xbee#16.097152896145424" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#16.097152896145424" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 23.054205333333353
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#16.097152896145424" and puts it in v
+S11 Read DATA: xbee#16.097152896145424
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 24.00000000000002
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#18.88107575274437
+S1 Read DATA: S#12#18.88107575274437
+S1 DATA Creation:xbee#18.88107575274437
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#18.88107575274437" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 24.00000000000002
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#18.88107575274437".
+S1 has finished sending the message : "xbee#18.88107575274437" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#18.88107575274437" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 24.026013333333356
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#18.88107575274437" and puts it in x
+S2 Read DATA: xbee#18.88107575274437
+S2 DATA Creation:xbee#18.88107575274437
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#18.88107575274437" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 24.026013333333356
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#18.88107575274437".
+S2 has finished sending the message : "xbee#18.88107575274437" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#18.88107575274437" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 24.05202666666669
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#18.88107575274437" and puts it in v
+S11 Read DATA: xbee#18.88107575274437
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 25.000000000000025
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#23.28681351982503
+S1 Read DATA: S#12#23.28681351982503
+S1 DATA Creation:xbee#23.28681351982503
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#23.28681351982503" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 25.000000000000025
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#23.28681351982503".
+S1 has finished sending the message : "xbee#23.28681351982503" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#23.28681351982503" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 25.02601333333336
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#23.28681351982503" and puts it in x
+S2 Read DATA: xbee#23.28681351982503
+S2 DATA Creation:xbee#23.28681351982503
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#23.28681351982503" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 25.02601333333336
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#23.28681351982503".
+S2 has finished sending the message : "xbee#23.28681351982503" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#23.28681351982503" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 25.052026666666695
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#23.28681351982503" and puts it in v
+S11 Read DATA: xbee#23.28681351982503
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 26.00000000000003
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#26.402290647838797
+S1 Read DATA: S#12#26.402290647838797
+S1 DATA Creation:xbee#26.402290647838797
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#26.402290647838797" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 26.00000000000003
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#26.402290647838797".
+S1 has finished sending the message : "xbee#26.402290647838797" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#26.402290647838797" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 26.027102666666696
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#26.402290647838797" and puts it in x
+S2 Read DATA: xbee#26.402290647838797
+S2 DATA Creation:xbee#26.402290647838797
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#26.402290647838797" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 26.027102666666696
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#26.402290647838797".
+S2 has finished sending the message : "xbee#26.402290647838797" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#26.402290647838797" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 26.054205333333364
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#26.402290647838797" and puts it in v
+S11 Read DATA: xbee#26.402290647838797
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 27.000000000000032
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#25.991987234005904
+S1 Read DATA: S#12#25.991987234005904
+S1 DATA Creation:xbee#25.991987234005904
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#25.991987234005904" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 27.000000000000032
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#25.991987234005904".
+S1 has finished sending the message : "xbee#25.991987234005904" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#25.991987234005904" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 27.0271026666667
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#25.991987234005904" and puts it in x
+S2 Read DATA: xbee#25.991987234005904
+S2 DATA Creation:xbee#25.991987234005904
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#25.991987234005904" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 27.0271026666667
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#25.991987234005904".
+S2 has finished sending the message : "xbee#25.991987234005904" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#25.991987234005904" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 27.054205333333368
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#25.991987234005904" and puts it in v
+S11 Read DATA: xbee#25.991987234005904
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 28.000000000000036
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#24.272334991129757
+S1 Read DATA: S#12#24.272334991129757
+S1 DATA Creation:xbee#24.272334991129757
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#24.272334991129757" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 28.000000000000036
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#24.272334991129757".
+S1 has finished sending the message : "xbee#24.272334991129757" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#24.272334991129757" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 28.027102666666703
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#24.272334991129757" and puts it in x
+S2 Read DATA: xbee#24.272334991129757
+S2 DATA Creation:xbee#24.272334991129757
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#24.272334991129757" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 28.027102666666703
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#24.272334991129757".
+S2 has finished sending the message : "xbee#24.272334991129757" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#24.272334991129757" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 28.05420533333337
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#24.272334991129757" and puts it in v
+S11 Read DATA: xbee#24.272334991129757
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 29.00000000000004
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#18.22123705745078
+S1 Read DATA: S#12#18.22123705745078
+S1 DATA Creation:xbee#18.22123705745078
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#18.22123705745078" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 29.00000000000004
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#18.22123705745078".
+S1 has finished sending the message : "xbee#18.22123705745078" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#18.22123705745078" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 29.026013333333374
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#18.22123705745078" and puts it in x
+S2 Read DATA: xbee#18.22123705745078
+S2 DATA Creation:xbee#18.22123705745078
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#18.22123705745078" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 29.026013333333374
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#18.22123705745078".
+S2 has finished sending the message : "xbee#18.22123705745078" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#18.22123705745078" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 29.05202666666671
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#18.22123705745078" and puts it in v
+S11 Read DATA: xbee#18.22123705745078
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 30.000000000000043
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#22.855157484359864
+S1 Read DATA: S#12#22.855157484359864
+S1 DATA Creation:xbee#22.855157484359864
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#22.855157484359864" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 30.000000000000043
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#22.855157484359864".
+S1 has finished sending the message : "xbee#22.855157484359864" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#22.855157484359864" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 30.02710266666671
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#22.855157484359864" and puts it in x
+S2 Read DATA: xbee#22.855157484359864
+S2 DATA Creation:xbee#22.855157484359864
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#22.855157484359864" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 30.02710266666671
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#22.855157484359864".
+S2 has finished sending the message : "xbee#22.855157484359864" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#22.855157484359864" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 30.05420533333338
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#22.855157484359864" and puts it in v
+S11 Read DATA: xbee#22.855157484359864
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 31.000000000000046
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#25.267210858404646
+S1 Read DATA: S#12#25.267210858404646
+S1 DATA Creation:xbee#25.267210858404646
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#25.267210858404646" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 31.000000000000046
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#25.267210858404646".
+S1 has finished sending the message : "xbee#25.267210858404646" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#25.267210858404646" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 31.027102666666714
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#25.267210858404646" and puts it in x
+S2 Read DATA: xbee#25.267210858404646
+S2 DATA Creation:xbee#25.267210858404646
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#25.267210858404646" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 31.027102666666714
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#25.267210858404646".
+S2 has finished sending the message : "xbee#25.267210858404646" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#25.267210858404646" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 31.054205333333382
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#25.267210858404646" and puts it in v
+S11 Read DATA: xbee#25.267210858404646
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 32.00000000000005
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#24.721163975897674
+S1 Read DATA: S#12#24.721163975897674
+S1 DATA Creation:xbee#24.721163975897674
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#24.721163975897674" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 32.00000000000005
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#24.721163975897674".
+S1 has finished sending the message : "xbee#24.721163975897674" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#24.721163975897674" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 32.027102666666714
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#24.721163975897674" and puts it in x
+S2 Read DATA: xbee#24.721163975897674
+S2 DATA Creation:xbee#24.721163975897674
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#24.721163975897674" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 32.027102666666714
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#24.721163975897674".
+S2 has finished sending the message : "xbee#24.721163975897674" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#24.721163975897674" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 32.05420533333338
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#24.721163975897674" and puts it in v
+S11 Read DATA: xbee#24.721163975897674
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 33.00000000000004
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#27.19080016335412
+S1 Read DATA: S#12#27.19080016335412
+S1 DATA Creation:xbee#27.19080016335412
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#27.19080016335412" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 33.00000000000004
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#27.19080016335412".
+S1 has finished sending the message : "xbee#27.19080016335412" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#27.19080016335412" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 33.026013333333374
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#27.19080016335412" and puts it in x
+S2 Read DATA: xbee#27.19080016335412
+S2 DATA Creation:xbee#27.19080016335412
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#27.19080016335412" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 33.026013333333374
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#27.19080016335412".
+S2 has finished sending the message : "xbee#27.19080016335412" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#27.19080016335412" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 33.052026666666706
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#27.19080016335412" and puts it in v
+S11 Read DATA: xbee#27.19080016335412
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 34.000000000000036
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#22.73071092044784
+S1 Read DATA: S#12#22.73071092044784
+S1 DATA Creation:xbee#22.73071092044784
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#22.73071092044784" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 34.000000000000036
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#22.73071092044784".
+S1 has finished sending the message : "xbee#22.73071092044784" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#22.73071092044784" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 34.02601333333337
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#22.73071092044784" and puts it in x
+S2 Read DATA: xbee#22.73071092044784
+S2 DATA Creation:xbee#22.73071092044784
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#22.73071092044784" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 34.02601333333337
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#22.73071092044784".
+S2 has finished sending the message : "xbee#22.73071092044784" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#22.73071092044784" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 34.0520266666667
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#22.73071092044784" and puts it in v
+S11 Read DATA: xbee#22.73071092044784
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 35.00000000000003
+Min (milliseconds) : 0.9479733333333333
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#26.655839442428643
+S1 Read DATA: S#12#26.655839442428643
+S1 DATA Creation:xbee#26.655839442428643
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#26.655839442428643" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 35.00000000000003
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#26.655839442428643".
+S1 has finished sending the message : "xbee#26.655839442428643" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#26.655839442428643" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 35.02710266666669
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#26.655839442428643" and puts it in x
+S2 Read DATA: xbee#26.655839442428643
+S2 DATA Creation:xbee#26.655839442428643
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#26.655839442428643" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 35.02710266666669
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#26.655839442428643".
+S2 has finished sending the message : "xbee#26.655839442428643" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#26.655839442428643" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 35.05420533333336
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#26.655839442428643" and puts it in v
+S11 Read DATA: xbee#26.655839442428643
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 36.00000000000002
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#16.8735029292731
+S1 Read DATA: S#12#16.8735029292731
+S1 DATA Creation:xbee#16.8735029292731
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#16.8735029292731" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 36.00000000000002
+Min (milliseconds) : 1.68E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#16.8735029292731".
+S1 has finished sending the message : "xbee#16.8735029292731" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#16.8735029292731" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 36.02492400000002
+Min (milliseconds) : 0.024924
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#16.8735029292731" and puts it in x
+S2 Read DATA: xbee#16.8735029292731
+S2 DATA Creation:xbee#16.8735029292731
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#16.8735029292731" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 36.02492400000002
+Min (milliseconds) : 1.68E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#16.8735029292731".
+S2 has finished sending the message : "xbee#16.8735029292731" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#16.8735029292731" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 36.04984800000002
+Min (milliseconds) : 0.024924
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#16.8735029292731" and puts it in v
+S11 Read DATA: xbee#16.8735029292731
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 37.00000000000002
+Min (milliseconds) : 0.9501520000000001
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#18.429193393261386
+S1 Read DATA: S#12#18.429193393261386
+S1 DATA Creation:xbee#18.429193393261386
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#18.429193393261386" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 37.00000000000002
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#18.429193393261386".
+S1 has finished sending the message : "xbee#18.429193393261386" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#18.429193393261386" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 37.027102666666686
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#18.429193393261386" and puts it in x
+S2 Read DATA: xbee#18.429193393261386
+S2 DATA Creation:xbee#18.429193393261386
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#18.429193393261386" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 37.027102666666686
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#18.429193393261386".
+S2 has finished sending the message : "xbee#18.429193393261386" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#18.429193393261386" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 37.05420533333335
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#18.429193393261386" and puts it in v
+S11 Read DATA: xbee#18.429193393261386
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 38.000000000000014
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#17.571145099372465
+S1 Read DATA: S#12#17.571145099372465
+S1 DATA Creation:xbee#17.571145099372465
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#17.571145099372465" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 38.000000000000014
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#17.571145099372465".
+S1 has finished sending the message : "xbee#17.571145099372465" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#17.571145099372465" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 38.02710266666668
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#17.571145099372465" and puts it in x
+S2 Read DATA: xbee#17.571145099372465
+S2 DATA Creation:xbee#17.571145099372465
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#17.571145099372465" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 38.02710266666668
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#17.571145099372465".
+S2 has finished sending the message : "xbee#17.571145099372465" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#17.571145099372465" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 38.05420533333334
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#17.571145099372465" and puts it in v
+S11 Read DATA: xbee#17.571145099372465
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 39.00000000000001
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#18.886764420259055
+S1 Read DATA: S#12#18.886764420259055
+S1 DATA Creation:xbee#18.886764420259055
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#18.886764420259055" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 39.00000000000001
+Min (milliseconds) : 1.84E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#18.886764420259055".
+S1 has finished sending the message : "xbee#18.886764420259055" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#18.886764420259055" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 39.02710266666667
+Min (milliseconds) : 0.02710266666666667
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#18.886764420259055" and puts it in x
+S2 Read DATA: xbee#18.886764420259055
+S2 DATA Creation:xbee#18.886764420259055
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#18.886764420259055" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 39.02710266666667
+Min (milliseconds) : 1.84E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#18.886764420259055".
+S2 has finished sending the message : "xbee#18.886764420259055" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#18.886764420259055" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 39.054205333333336
+Min (milliseconds) : 0.02710266666666667
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#18.886764420259055" and puts it in v
+S11 Read DATA: xbee#18.886764420259055
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 40.0
+Min (milliseconds) : 0.9457946666666666
+S1 has finished the delay.
+
+S1 Starts the loop section.
+S1 SET topic="xbee"
+S1 READ SENSOR: S#12#19.38240794237207
+S1 Read DATA: S#12#19.38240794237207
+S1 DATA Creation:xbee#19.38240794237207
+S1 PRINT [print, message]
+S1 is writing the message : "xbee#19.38240794237207" in its buffer.
+A12 VALUE GENERATION
+
+----------------------------------------------------------------------------
+Time : 40.0
+Min (milliseconds) : 1.76E-19
+S1 is listening to the channel
+S1 the channel is free.
+S1 starts sending the message : "xbee#19.38240794237207".
+S1 has finished sending the message : "xbee#19.38240794237207" to the nodes with MY=45.0: 
+  -> S2 
+S2 (radio: radio1) is receiving the message : "xbee#19.38240794237207" in its buffer.
+S1 starts delaying for 1000.0 milliseconds
+
+----------------------------------------------------------------------------
+Time : 40.02601333333333
+Min (milliseconds) : 0.026013333333333333
+S2 Buffer available, exit waiting.
+S2 READ
+S2 is reading from its buffer "xbee#19.38240794237207" and puts it in x
+S2 Read DATA: xbee#19.38240794237207
+S2 DATA Creation:xbee#19.38240794237207
+S2 PRINT [print, message]
+S2 is writing the message : "xbee#19.38240794237207" in its buffer.
+
+----------------------------------------------------------------------------
+Time : 40.02601333333333
+Min (milliseconds) : 1.76E-19
+S2 is listening to the channel
+S2 the channel is free.
+S2 starts sending the message : "xbee#19.38240794237207".
+S2 has finished sending the message : "xbee#19.38240794237207" to the nodes with MY=78.0: 
+  -> S11 
+S11 (radio: radio1) is receiving the message : "xbee#19.38240794237207" in its buffer.
+S2 Starts the loop section.
+S2 is waiting for data ...
+
+----------------------------------------------------------------------------
+Time : 40.05202666666666
+Min (milliseconds) : 0.026013333333333333
+S11 Buffer available, exit waiting.
+S11 READ
+S11 is reading from its buffer "xbee#19.38240794237207" and puts it in v
+S11 Read DATA: xbee#19.38240794237207
+S11 GET TIME.
+S11 PRINTFILE [printfile, t, topic, value]
+S11 PRINT [print, v]
+S11 Starts the loop section.
+S11 is waiting for data ...

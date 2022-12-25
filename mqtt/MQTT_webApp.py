@@ -10,6 +10,9 @@ from paho import mqtt
     #* just some make-up
 from firebase import firebase
 import sys
+import matplotlib.pyplot as plt
+from numpy import savetxt, loadtxt
+import numpy as np
 
 broker = 'e9a907584e984fd6a82dc5fa0408e996.s2.eu.hivemq.cloud'
 port = 8883
@@ -55,7 +58,9 @@ def subscribe(client: mqtt_client):
 
             if msg.topic == "xbee":
                 temp = msg.payload.decode() 
-                db.append(temp)
+                db.append(10*float(temp))
+
+                # savetxt('data.csv', np.array(db), delimiter=',')
                 mess.append(msg)
                 
                 global val
@@ -76,6 +81,8 @@ def main():
     text = st.sidebar.subheader("**To connect to MQTT broker by default settings click on 'Connect' button**")
 
     button_connect = st.sidebar.button('Connect and Subscribe')
+    button_disconnect = st.sidebar.button('Disconnect')    
+
     area_1 = st.empty()
     area_2 = st.empty()
     # image = Image.open("MQTT/spinner2.gif")
@@ -84,13 +91,24 @@ def main():
         area_1.markdown("![Alt Text](https://wp-technique.com/loading/loading.gif)")
         client = connect_mqtt()
         subscribe(client)
-        # client.loop_forever()
+        st.write(client.is_connected())
+        client.loop_start()
 
-        while True:
-            client.loop()
-            area_1.metric(label="Value", value=str((db[-1])))
-            
+        # area_1.metric(label="Value", value=str((db[-1])))
+
+        # client.loop_forever()
+        while button_connect==True:
+                area_1.metric(label="Value", value=str((db[-1])))
+                np.savetxt("data.txt", np.array((db)),)
+                area_2.line_chart(db)
+                time.sleep(3)
+        #        datas = db.copy()
+        # client.loop_stop()
+        # client.disconnect()
+        area_1.metric(label="value", value="4545")
+        
 if __name__ == '__main__':
+
     try:
         main()
 

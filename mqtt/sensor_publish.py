@@ -48,7 +48,7 @@ def connect_mqtt():
     client.connect(broker_["broker"], broker_["port"])
     return client
 
-#* GETS CPU TEMP AS STATUS
+#* 
 def publish(client):
      msg_count = 0
      while True:

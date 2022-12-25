@@ -52,7 +52,6 @@ def connect_mqtt():
 def publish(client):
      msg_count = 0
      while True:
-        time.sleep(1)
         with open("C:\\Users\\tinrafiq\\Documents\\zb\\results\\S11", "r") as file:
             last_line = file.readlines()[-1]
             message = last_line.split()

@@ -1,3 +1,4 @@
+import datetime
 import time
 import streamlit as st
     #* to read json file
@@ -6,12 +7,8 @@ import streamlit as st
 from paho.mqtt import client as mqtt_client
     #* to use tls
 from paho import mqtt
-    #* to get cpu heat
-    #* just some make-up
 from firebase import firebase
 import sys
-import matplotlib.pyplot as plt
-from numpy import savetxt, loadtxt
 import numpy as np
 
 broker = 'e9a907584e984fd6a82dc5fa0408e996.s2.eu.hivemq.cloud'
@@ -23,11 +20,15 @@ username = 'tinrafiq'
 password = "j8ktX@W7'Qw"
 firebase = firebase.FirebaseApplication('https://iot-mqtt-now-default-rtdb.europe-west1.firebasedatabase.app', None)
 
-global db
-db= [0 , 0]
+global sensor_2, sensor_6, sensor_8, sensor_14
+sensor_2 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+sensor_6 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+sensor_8 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+sensor_14 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 global mess
-mess = [0, 0]
+mess = []
+
 
 def connect_mqtt():
 
@@ -56,57 +57,89 @@ def subscribe(client: mqtt_client):
         def on_message(client, userdata, msg):
             # print(f"Received `{msg.payload.decode()}` from `{msg.topic}` topic")
 
-            if msg.topic == "xbee":
-                temp = msg.payload.decode() 
-                db.append(10*float(temp))
+            if msg.topic:
+                #* sensor_id, generated_time, value, saved_time, send_time
+                temp = msg.payload.decode()
+                temp = temp.split() 
+                received = [(temp[4]), str(datetime.datetime.now().time())]
+                sensor_id = temp[0]
+                value = temp[2]
 
-                # savetxt('data.csv', np.array(db), delimiter=',')
-                mess.append(msg)
-                
+                #! burayı aç
+                if int(sensor_id) == 2:
+                    sensor_2.append(int(value))
+                elif int(sensor_id) == 6:
+                    sensor_6.append(int(value))
+                elif int(sensor_id) == 8:
+                    sensor_8.append(int(value))
+                elif int(sensor_id) == 14:
+                    sensor_14.append(int(value))
+                else: st.write("Error")
+
+                #! burayı aç
+                mess.append(received)
                 global val
-                val = str(temp)
+                val = str(value)
 
+            #? send to firebase
             if val != '':
  
                 firebase.post('/xbee', temp)
                 val = ''
 
         #* subscribe to a certain topic and print it
-        client.subscribe(topic)
+        client.subscribe(topic, qos=0)
         client.on_message = on_message
 
 def main():
-    title = st.sidebar.title("**Welcome, You can connect to my MQTT Simulation with this Web App**")
-    context = st.sidebar.subheader("**With MQTT I'am publishing my CPU Temperature to a MQTT Broker. This Web App is a client subscribing to the topic which is published by my computer client.**")
+    title = st.sidebar.title("**Welcome, You can connect to my MQTT-ZigBEE Simulation with this Web App**")
+    context = st.sidebar.subheader("**YOu can get Sensor Values via MQTT and visualize them**")
     text = st.sidebar.subheader("**To connect to MQTT broker by default settings click on 'Connect' button**")
 
     button_connect = st.sidebar.button('Connect and Subscribe')
-    button_disconnect = st.sidebar.button('Disconnect')    
 
+    #* to visiualize values
     area_1 = st.empty()
+    area_2a = st.empty()
     area_2 = st.empty()
-    # image = Image.open("MQTT/spinner2.gif")
+    area_3a = st.empty()
+    area_3 = st.empty()
+    area_4a = st.empty()
+    area_4 = st.empty()
+    area_5a = st.empty()
+    area_5 = st.empty()
+
+
     if button_connect:
+
         st.subheader("We also send data to Firebase Realtime DB")
         area_1.markdown("![Alt Text](https://wp-technique.com/loading/loading.gif)")
         client = connect_mqtt()
         subscribe(client)
-        st.write(client.is_connected())
         client.loop_start()
 
-        # area_1.metric(label="Value", value=str((db[-1])))
+        area_1.header("Sensor Values (Realtime)")
+        area_2a.subheader("Sensor A Values")
+        area_3a.subheader("Sensor B Values")
+        area_4a.subheader("Sensor C Values")
+        area_5a.subheader("Sensor D (DIGITAL) Values")
 
-        # client.loop_forever()
+
         while button_connect==True:
-                area_1.metric(label="Value", value=str((db[-1])))
-                np.savetxt("data.txt", np.array((db)),)
-                area_2.line_chart(db)
-                time.sleep(3)
-        #        datas = db.copy()
-        # client.loop_stop()
-        # client.disconnect()
-        area_1.metric(label="value", value="4545")
-        
+
+                # with open("C:\\Users\\tinrafiq\\Documents\\mqtt\\mqtt\\mqtt\\data.txt", "w+") as txt_file:
+                #     txt_file.write(str(np.array(mess)))
+                time.sleep(1)
+                #! burayı aç
+                area_2.line_chart(sensor_2[-10:])
+                area_3.line_chart(sensor_6[-10:])
+                area_4.line_chart(sensor_8[-10:])
+                if sensor_14[-1] == 0:
+                    area_5.markdown("![Alt Text](https://upload.wikimedia.org/wikipedia/commons/d/dd/Icon_Transparent_Red.png)")
+                else:
+                    area_5.markdown("![Alt Text](https://upload.wikimedia.org/wikipedia/commons/b/b0/Icon_Transparent_Green.png)")
+
+
 if __name__ == '__main__':
 
     try:

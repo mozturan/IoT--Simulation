@@ -7,6 +7,7 @@
 
 """
 #* to read json file
+import datetime
 import json
 #* to create delay (additionally)
 import time
@@ -15,16 +16,14 @@ from paho.mqtt import client as mqtt_client
 #* to use tls
 from paho import mqtt
 #* to get cpu heat
-from pyspectator.processor import Cpu
 #* just some make-up
 import sys
 
 #* Gets broker info from json file
-broker_ = json.load(open("./mqtt/broker.json"))
+broker_ = json.load(open("./broker.json"))
 
 #* Gives client we created an id and identify publishing topic
 client_id = "000"
-topic = "cpu/tempeture"
 
 def connect_mqtt():
 
@@ -50,21 +49,32 @@ def connect_mqtt():
 
 #* 
 def publish(client):
-     msg_count = 0
+     message_send = 0
+     message_fail = 0
+
+     message = None
      while True:
-        with open("C:\\Users\\tinrafiq\\Documents\\zb\\results\\S11", "r") as file:
+        with open("C:\\Users\\tinrafiq\\Documents\\xx\\results\\SINK_7", "r") as file:
             last_line = file.readlines()[-1]
-            message = last_line.split()
-            topic = message[1]
-        msg = message[2]
-        result = client.publish(topic, msg)
-        #* result: [0, 1]
-        status = result[0]
-        if status == 0:
-            print(f"Send `{msg}` to topic `{topic}`")
+        if last_line == message:
+            pass
+
         else:
-            print(f"Failed to send message to topic {topic}")
-        msg_count += 1
+            message = last_line
+            topic = "xbee"
+            #* sensor_id, generated_time, value, saved_time, send_time
+            msg = last_line + " " + str(datetime.datetime.now().time())
+            result = client.publish(topic, msg, qos=0)
+            #* result: [0, 1]
+            status = result[0]
+            if status == 0:
+                # print(f"Send `{msg}` to topic `{topic}`")
+                message_send +=1
+            else:
+                # print(f"Failed to send message to topic {topic}")
+                message_fail +=1
+
+        time.sleep(0.001)
 
 def run():
     client = connect_mqtt()
@@ -78,7 +88,6 @@ if __name__ == '__main__':
     except KeyboardInterrupt:
         print("\nPrograms was stopped")  
         sys.exit()
-
 
 
 

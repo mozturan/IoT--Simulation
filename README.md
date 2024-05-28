@@ -1,4 +1,7 @@
 #  IoT Simulation W/ MQTT and ZigBee Protocols
+
+**NOTE: This project is open to development. This is a template project for a freelance request.**
+
 My aim in this project is to simulate a system that enables the transmission and observation of requested sensor parameters in forests, fields, deserts, national parks or similar external natural habitats, thanks to ZigBee and MQTT technologies. CupCarbon[https://github.com/bounceur/CupCarbon] simulation environment is used for sensor data and ZigBee protocol.
 
 The data obtained from the simulated environment using ZigBee + MQTT protocols was transferred in real time to the cloud and to an interface that we can monitor.
